@@ -1,0 +1,25 @@
+{
+  "slug": "forge-robotics-cell-reliability-twin",
+  "company": "Robot Cell Reliability Twin",
+  "title": "Robot Cell Reliability Twin",
+  "thesis": "A local manufacturing-cell reliability prototype that models synthetic robot-cell variation, failure risk, and release readiness.",
+  "dataset": [
+    "Synthetic local fixtures generated deterministically from a seed.",
+    "Typed records stored in a local DuckDB database.",
+    "Evidence identifiers preserved from ingestion through report generation.",
+    "No external services, credentials, or production data are required."
+  ],
+  "build": [
+    "Synthetic cycle, part, fixture, sensor, and throughput records.",
+    "Reliability analysis for variation tolerance, downtime risk, and throughput constraints.",
+    "Static dashboard, evidence graph, and benchmark output for reproducible review.",
+    "Offline dashboard generated as a static HTML artifact.",
+    "Evidence verifier rejects unsupported or unknown claims."
+  ],
+  "tests": [
+    "Unit tests cover the end-to-end local workflow.",
+    "Verifier tests cover unsupported and unknown evidence references.",
+    "Dashboard escaping tests cover fixture text rendered into HTML.",
+    "Benchmark: record count, runtime, artifact count, and verification status are recorded."
+  ]
+}
