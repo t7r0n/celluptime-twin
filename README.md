@@ -2,13 +2,19 @@
 
 A local manufacturing-cell reliability prototype that models synthetic robot-cell variation, failure risk, and release readiness.
 
-## Features
+`forge-robotics-cell-reliability-twin` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
+
+## Engineering read
+
+Manufacturing Cell Reliability Twin: Scan-Simulate-Automate With Failure Economics.
+
+## What is measured
 
 - Synthetic cycle, part, fixture, sensor, and throughput records.
 - Reliability analysis for variation tolerance, downtime risk, and throughput constraints.
 - Static dashboard, evidence graph, and benchmark output for reproducible review.
 
-## Run Locally
+## One-pass run
 
 ```bash
 uv sync
@@ -23,7 +29,7 @@ uv run pytest -q
 uv run ruff check .
 ```
 
-## Outputs
+## Evidence packet
 
 - `outputs/dashboard.html`
 - `outputs/decision_report.md`
@@ -32,6 +38,14 @@ uv run ruff check .
 - `outputs/benchmark.md`
 - `outputs/demo_pack.md`
 
-## Data Policy
+## Checks
 
-This project runs fully locally on deterministic synthetic fixtures. It does not require external APIs, credentials, private datasets, network access, or production systems.
+```bash
+uv run ruff check .
+uv run pytest -q
+uv run app verify
+```
+
+## No-secrets boundary
+
+`Robot Cell Reliability Twin` checks in synthetic fixtures only. Runtime state, dashboards, caches, virtual environments, and generated packs stay out of git.
