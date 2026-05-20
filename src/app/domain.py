@@ -19,7 +19,7 @@ PRIMARY_METRIC = 'reliability_score'
 PRIMARY_LABEL = 'Reliability'
 CHECKS = ['unreachable pose caught', 'collision risk detected before automation', 'calibration drift degrades reliability', 'ROI rejects hidden downtime']
 CASES = [['cell-a', 'nominal', 'go', True, 92, 'path:P1 fixture:F1 roi:R1', 'stable path and positive payback'], ['cell-b', 'collision_risk', 'no_go', True, 31, 'path:P8 geometry:G4', 'swept path crosses fixture tolerance envelope'], ['cell-c', 'unreachable_pose', 'no_go', True, 28, 'pose:X9 robot:R2', 'target pose outside reachable workspace'], ['cell-d', 'perception_ambiguity', 'review', False, 61, 'camera:C3 lighting:L7', 'occlusion creates uncertain feature detection'], ['cell-e', 'downtime_roi', 'no_go', True, 47, 'roi:R9 drift:D2', 'nominal savings erased by drift downtime']]
-SLUG = 'forge-robotics-cell-reliability-twin'
+SLUG = 'celluptime-twin'
 
 
 class DomainCase(BaseModel):
