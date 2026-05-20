@@ -1,5 +1,6 @@
 # Robot Cell Reliability Twin
 
+![Robot Cell Reliability Twin working preview](outputs/project_working.svg)
 A local manufacturing-cell reliability prototype that models synthetic robot-cell variation, failure risk, and release readiness.
 
 `forge-robotics-cell-reliability-twin` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
@@ -49,3 +50,5 @@ uv run app verify
 ## No-secrets boundary
 
 `Robot Cell Reliability Twin` checks in synthetic fixtures only. Runtime state, dashboards, caches, virtual environments, and generated packs stay out of git.
+
+![Robot Cell Reliability Twin evidence map](outputs/evidence_map.svg)
