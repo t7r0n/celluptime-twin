@@ -1,5 +1,5 @@
 [project]
-name = "celluptime-twin"
+name = "cell-reliability-twin"
 version = "0.1.0"
 description = "Manufacturing Cell Reliability Twin: Scan-Simulate-Automate With Failure Economics"
 requires-python = ">=3.12"

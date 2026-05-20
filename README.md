@@ -3,7 +3,7 @@
 ![Robot Cell Reliability Twin working preview](outputs/project_working.svg)
 A local manufacturing-cell reliability prototype that models synthetic robot-cell variation, failure risk, and release readiness.
 
-`celluptime-twin` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
+`cell-reliability-twin` favors explicit fixtures, deterministic checks, and reviewable artifacts over hidden services or live data.
 
 ## Engineering read
 

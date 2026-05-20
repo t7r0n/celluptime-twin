@@ -21,7 +21,7 @@ wheels = [
 ]
 
 [[package]]
-name = "celluptime-twin"
+name = "cell-reliability-twin"
 version = "0.1.0"
 source = { editable = "." }
 dependencies = [
